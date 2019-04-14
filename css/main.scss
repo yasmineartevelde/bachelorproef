@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+$color1: #3d64ad;
+$color2: #ec634f;
+$color3: #3daa9a;
+$color4: #f0d44f;
+$white: #fff;
+$beige: #484848;
+$hovercolor: rgba(0,0,0,0.2);
+$borderradius: 4px;
+$paralaxheight: 350px;
+$titelcolor: #172B4D;
+$subtitlecolor: #434343;
+
+//fonts 
+h1, h2, h3, h5 {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold; 
+}
+body, h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-weight: lighter;
+}
+//navigation
+.sidenav,
+.mobilediv,
+.sidenav li>a{
+  background-color: $color1;
+  color: $white!important;
+}
+.sidenav li>a>i{
+  color: $white!important;
+}
+.mobilediv{
+  width: 50px;
+  transform: translateX(0%);
+  left: 0;
+  position: fixed;
+  padding-left: 0;
+  padding-bottom: 60px;
+  list-style-type: none;
+  top: 0;
+  margin: 0;
+  z-index: 939;
+  overflow-y: auto;
+  will-change: transform;
+  backface-visibility: hidden;
+  height: calc(100% + 60px);
+}
+.sidenav-trigger{
+  color: $white;
+  margin: 40px auto;
+  display: block;
+  text-align: center;
+}
+.user-view{
+  width: auto;
+  display: block;
+  height: 200px;
+  background-image: url(../img/logo-wit-06.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  margin-top: -60px;
+}
+nav i.material-icons{
+  display: inline-block;
+  margin: 0 32px 0 0;
+}
+.socialmedia{
+  a{
+    margin-top: 10px;
+    color: $white;
+    padding-top: 10px;
+    color: $white;
+    display: block;
+  }
+}
+.sidenav {
+  li{
+    a{
+      &:hover{
+        border-radius: $borderradius;
+        background-color: $hovercolor;
+        -webkit-transition: background-color 1s ease;
+        -moz-transition: background-color1s ease;
+        -o-transition: background-color 1s ease;
+        transition: background-color 1s ease;
+      }
+    }
+  }
+}
+//text
+
+h2 {
+  font-size: 2rem;
+  color: $color2;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.card-container {
+  margin-top: 40.6px;
+  margin-bottom: 150px;
+
+  .card-panel {
+    background-color: $color2;
+  }
+}
+h5 {
+  font-size: 1.3rem;
+  margin-top: 3.5rem;
+  color: $color1;
+}
+// persoon
+.visie {
+  p {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+.belang {
+  margin-bottom: 150px;
+
+  .belang-kader {
+    background-color: $color2;
+
+    p {
+      padding: 0.5rem 1rem 1rem 0.5rem;
+    }
+  }
+}
+// logo
+.circle {
+  p {
+    margin-top: 2rem;
+  }
+}
+.logo-origineel {
+  display: table-cell;
+  text-align: center;
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+.opbouw-txt {
+  h5 {
+    color: $color2;
+  }
+}
+
+.opbouw-img {
+
+  img {
+    width: 80%;
+    height: auto;
+    margin-top: 60px;
+  }
+}
+.halfimagewrapper{
+  width: 100%;
+  height: 100%;
+  display: block;
+  img{
+    width: 50%!important;    
+    margin: 0 auto;
+  }
+}
+.woordmerk {
+  h5 {
+    color: $color2;
+  }
+}
+.witruimte-img {
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+.beeldmerk {
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+.rules-img {
+  min-height: 370.80px;
+  img {
+    width: 50%;
+    height: auto;
+    // position: absolute!important;
+    // top: inherit!important;
+    // top: 50%;
+    // transform: translateY(-50%);
+  }
+}
+.logodownload {
+  .btn {
+    margin-bottom: 150px;
+  }
+}
+.rules-txt {
+  h5 {
+    color: $color2;
+  }
+}
+// kleuren
+.color {
+  h5 {
+    color: $color2;
+  }
+}
+.kleur {
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+.btn {
+  background-color: $color2;
+  text-transform: inherit;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+//elementen
+.line-fluid {
+  img {
+    width: 108%;
+    height: auto;
+  }
+}
+.lines {
+  img {
+    max-width: 250px;
+    margin-top: 30px;
+  }
+}
+.line-margin {
+  img {
+    margin-left: 10px;
+  }
+}
+//toepassingen
+.stationery-img {
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+  }
+}
+.stationery-txt {
+  li {
+    margin-left: 40px;
+  }
+}
+.btn {
+  margin-top: 20px;
+}
+.tshirt-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.folder-txt {
+  li {
+    margin-left: 40px;
+  }
+}
+.folder-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.banner-txt {
+  li {
+    margin-left: 40px;
+  }
+}
+.banner-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.map-txt {
+  li {
+    margin-left: 40px;
+  }
+}
+.map-img {
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+.digitaal {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.digitaal-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.website-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.blog-img {
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+  }
+}
+//content
+@media only screen and (max-width: 992px){
+  .content{
+    padding-left: 50px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .content{
+    padding-left: 300px;
+  } 
+}
+.parallax-container{
+  height: $paralaxheight;
+}
+#index-banner {
+  border-bottom: 1px solid rgba(0,0,0,0.14);
+}
+h1.header{
+  color: $color1;
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+}
+.huisstijl {
+  h1 {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 6rem;
+  }
+  h5 {
+    margin-top: 2.5rem;
+  }
+}
+h4.light{
+  color: $subtitlecolor;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.home-icon {
+  margin-left: 60px;
+}
+//footer
+.footer-copyright{
+  font-size: 0.7rem;
+  line-height: normal;
+}
+.footer-arte {
+  img {
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+}
+.footer-edu {
+  img {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+.gegevens {
+  text-align: center;
+  margin-bottom: 50px;
+}
+//materialize override 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  text-transform: inherit;
+  color: $color2;
+  &:hover{
+    color: $color3;
+  }
+}
+ul:not(.browser-default)>li {
+  list-style-type: disc;
+}
+.parallax-container .parallax img {
+  width: 30%;
+  height: auto;
+}
